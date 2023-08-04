@@ -19,7 +19,7 @@ Este é um projeto que simula um formulário de pagamento com validação de dad
 ### Como executar o projeto
 
 1. Clone o repositório para sua máquina local.
-2. Abra o arquivo `index.html` em seu navegador para visualizar o formulário de pagamento.
+2. Utilize o comando `npm run start`, ele abrirá o arquivo `index.html` em seu navegador na porta `3000`, assim você irá visualizar o formulário de pagamento.
 3. Preencha os campos do formulário e clique no botão "Finalizar Compra".
 4. Caso ocorra algum erro de validação, as mensagens de erro serão exibidas e o formulário não será enviado.
 5. Caso os campos estejam preenchidos corretamente, você será redirecionado para a página de confirmação de pagamento.
