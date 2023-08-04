@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+body {
+background-color: #F9F7F0;
+}
+
+.dados-pagamento {
+    color: #323030;
+    padding: 40px;
+    font-size: 20px;
+    font-weight:bold;
+    width: 100%;
+}
+
+/* Para colocar meu cartão ao lado do formulário */
+.visualizacao-cartao {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+
+form {
+    padding: 40px;
+
+}
+
+.nome-cartao label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 0.25rem;
+    color: #737373;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.nome-cartao input {
+    width: 400px;
+    padding: 10px;
+    font-size: 18px;
+    color: #323030;
+    margin-bottom: 4px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.erro {
+    font-size: 12px;
+    color: #EF0303;
+}
+
+.error-hidden {
+    display: none !important;
+}
+
+.invalido {
+    border: 1px solid #EF0303;
+}
+
+.numero-cartao label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 0.25rem;
+    color: #737373;
+    padding: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.numero-cartao input {
+    width: 400px;
+    padding: 10px;
+    font-size: 18px;
+    color: #323030;
+    margin-bottom: 4px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.data-validade{
+    margin-right: 20px;
+}
+
+.data-validade label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 0.25rem;
+    color: #737373;
+    padding: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.data-validade input {
+    width: 160px;
+    padding: 10px;
+    font-size: 18px;
+    color: #323030;
+    margin-bottom: 4px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.codigo-seguranca label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 0.25rem;
+    color: #737373;
+    padding: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.codigo-seguranca input {
+    width: 160px;
+    padding: 10px;
+    font-size: 18px;
+    color: #323030;
+    margin-bottom: 4px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.linha {
+    display: flex;
+}
+
+button {
+    padding: 8px 30px;
+    font-size: 20px;
+    background-image: linear-gradient(#5DE0E6, #004AAD);
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    border: #5DE0E6;
+    margin-top: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+button.hover {
+    background-image: radial-gradient(#5DE0E6, #004AAD);
+    border: 1px solid white;
+    
+}
+
+
+.container .card-container{
+    margin-top:  75px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.container .card-container .frente{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; left: 0;
+    background: linear-gradient(45deg, #5DE0E6, #004AAD);
+    border-radius: 5px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    padding: 20px;
+    transition: transform .5s ease-out;
+    }
+
+.container .card-container .frente .cartao-numero-box {
+    padding: 30px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.container .card-container .frente .flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card-container .frente .flexbox .box:nth-child(1){
+    margin-right: auto;
+} 
+
+.container .card-container .frente .flexbox .box {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.container .card-container .back {
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #5DE0E6, #004AAD);
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transition: transform .5s ease-out;
+    padding: 20px;
+}
+
+.container .card-container .back .listra-magnetica{
+    background: #000;
+    margin: 10px 0;
+    height: 50px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+}
+
+.container .card-container .back .box span {
+    color: #ffffff; 
+    font-size: 15px; 
+
+}
+
+.container .card-container .back .box .cvv-box {
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    color: #333;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.container .card-container .hide {
+    transform: perspective(1000px) rotateY(180deg);
+}
