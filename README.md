@@ -2,6 +2,10 @@
 
 Este é um projeto que simula um formulário de pagamento com validação de dados de cartão de crédito. O usuário pode preencher o formulário com o nome do titular do cartão, número do cartão, data de validade e código de segurança. O projeto também possui uma representação visual do cartão de crédito ao lado do formulário.
 
+### Preview do Projeto
+
+![Preview do Projeto](src/preview.gif)
+
 ### Funcionalidades
 
 - Validação do nome do titular do cartão: O campo do nome do titular do cartão é obrigatório. Caso esteja vazio, uma mensagem de erro será exibida.
