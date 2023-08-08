@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="visualizacao-cartao">
+    <header class="dados-pagamento">
+      <h1>Dados de pagamento</h1>
+    </header>
+    <section>
+      <form>
+        <div class="nome-cartao">
+          <label for="nome-cartao">Nome impresso no cartão</label>
+          <input name="nome-cartao" placeholder="Digite seu nome..." id="nome-cartao">
+          <p class="erro error-hidden">Nome Obrigatório</p>
+        </div>
+
+        <div class="numero-cartao">
+          <label for="numero-cartao">Número do Cartão:</label>
+          <input placeholder="0000 0000 0000 0000" type="text" maxlength="16" id="numero-cartao" name="numero-cartao">
+          <p class="erro error-hidden">Número de Cartão Inválido</p>
+        </div>
+
+        <div class="linha">
+
+          <div class="data-validade">
+            <label for="data-validade">Data de Validade:</label>
+            <input type="text" maxlength="7" id="data-validade" name="data-validade">
+            <p class="erro error-hidden">Data inválida</p>
+          </div>
+
+          <div class="codigo-seguranca">
+            <label for="codigo-seguranca">Código de Segurança:</label>
+            <input type="text" maxlength="3" id="codigo-seguranca" class="codigo-seguranca">
+            <p class="erro error-hidden">Código inválido</p>
+          </div>
+
+        </div>
+
+        <button type="submit" id="btnFinalizarPagamento">Finalizar Compra</button>
+      </form>
+    </section>
+    <!-- Aqui é para colocar o meu cartão ao lado -->
+    <aside>
+      <div class="container">
+        <div class="card-container">
+          <div class="frente">
+            <div class="cartao-numero-box">################</div>
+            <div class="flexbox">
+              <div class="box">
+                <span>Nome Titular</span>
+                <div class="nome-titular-cartao">NOME DO TITULAR</div>
+              </div>
+              <div class="box">
+                <span>Expiração</span>
+                <div class="expiracao">
+                  MM/AAAA
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="back hide">
+            <div class="listra-magnetica"></div>
+            <div class="box">
+              <span>CVV</span>
+              <div class="cvv-box">000</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </aside>
+  </main>
+
+  <footer>
+    <!-- Rodapé da página -->
+  </footer>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
