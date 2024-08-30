@@ -1,6 +1,7 @@
 ## Card Validation Project
 
 Este é um projeto que simula um formulário de pagamento com validação de dados de cartão de crédito. O usuário pode preencher o formulário com o nome do titular do cartão, número do cartão, data de validade e código de segurança. O projeto também possui uma representação visual do cartão de crédito ao lado do formulário.
+Para acessar o projeto, basta clicar em https://irixalmeida.github.io/SAP011-card-validation/
 
 ### Preview do Projeto
 
